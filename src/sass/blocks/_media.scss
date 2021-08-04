@@ -119,22 +119,34 @@
 
 
 @media (max-width:991px) {
+    .title {
+        font-size: 70px;
+    }
     .upper {
         .container {
             width: 700px;  
             
         }
     }
+    .services {
+        padding-top: 100px;
+    }
+    .intelligence {
+        padding-top: 100px;
+    }
+
 }
 
 @media (max-width:767px) {
+    .title {
+        font-size: 70px;
+    }
     .upper {
         &__wrapper {
             background: url(../img/bgd1.png);
         }
         .container {
             width: 320px;  
-            
         }
         &__btn {
             button {
@@ -143,9 +155,6 @@
         }
     }
     .services {
-        .title {
-            font-size: 70px;
-        }
         &__title {
             transform:none;
             padding: 0;
@@ -156,11 +165,19 @@
             }
         }
     }
+    .intelligence {
+        &__blocks {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+    }
+    
 }
 
 
 
 @media (max-width:575px) {
+
     .upper {
         .container {
             width: 270px;  

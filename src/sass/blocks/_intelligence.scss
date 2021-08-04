@@ -1,0 +1,33 @@
+.intelligence {
+    padding-top: 200px;
+    padding-bottom: 10px;
+    .container {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__block {
+        max-width: 350px;
+        padding: 15px;
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #F66E4D;
+        margin-top: 50px;
+        margin-bottom: 45px;
+    }
+    &__text {
+        font-size: 18px;
+        color: #000000;
+    }
+}
+.title {
+    font-size: 110px;
+    margin-bottom: 70px;
+    }
