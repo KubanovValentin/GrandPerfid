@@ -2,22 +2,24 @@
     height: 100vh;
     &__wrapper {
         height: 100%;
-        background: url(../img/bgd.jpg);
+        width: 100%;
+        background: url(../img/bgd1.png);
+        // background-size: 100% 100%;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: 70% 100%;
     }
     .header {
         position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 40px 110px 0 50px;
+        padding: 40px 70px 0 50px;
 
     }
     .logo {
         position: relative;
-        width: 289px;
+        max-width: 289px;
         height: 58px;
         z-index: 1;
         &::after {
@@ -33,38 +35,6 @@
         }
         img {
             width: 100%;
-        }
-    }
-    .menu {
-        &__list {
-            display: flex;
-            list-style: none;
-            li {
-                position: relative;
-                z-index: 1;
-                margin-right: 50px;
-                &:hover {
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        z-index: -1;
-                        width: 20px;
-                        height: 20px;
-                        background:#F66E4D;
-                        border-radius: 50%;
-                        top: -8px;
-                        right: -7px;
-                    }
-                }
-                
-            }
-            a {
-                font-size: 20px;
-                font-weight: bold;
-                color: #000000;
-                text-decoration: none;
-                text-transform:uppercase;
-            }
         }
     }
     .element {
@@ -84,7 +54,7 @@
                 border-radius: 100%;
                 width: 23px;
                 height: 23px;
-                background:#76C4DE;
+                background:#6CC0DA;
             }
         }
     }
@@ -99,7 +69,6 @@
         margin-bottom: 80px;
     }
     &__btn {
-        
         button {
             font-size: 18px;
             font-weight: bold;

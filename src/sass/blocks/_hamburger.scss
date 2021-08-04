@@ -1,0 +1,39 @@
+.hamburger {
+    display: none;
+}
+.menu {
+    &__list {
+        display: flex;
+        list-style: none;
+        li {
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            margin-right: 40px;
+            &:hover {
+                
+                border-bottom: 2px solid #F66E4D;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    z-index: -1;
+                    width: 20px;
+                    height: 20px;
+                    background:#F66E4D;
+                    border-radius: 50%;
+                    top: -8px;
+                    right: -7px;
+                }
+            }
+            
+        }
+        a {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+            text-decoration: none;
+            text-transform:uppercase;
+        }
+    }
+}
