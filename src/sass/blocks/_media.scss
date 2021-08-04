@@ -136,6 +136,25 @@
             width: 320px;  
             
         }
+        &__btn {
+            button {
+                font-size: 25px;
+            }
+        }
+    }
+    .services {
+        .title {
+            font-size: 70px;
+        }
+        &__title {
+            transform:none;
+            padding: 0;
+            text-align: center;
+            justify-content: center;
+            a{
+                font-size: 35px;
+            }
+        }
     }
 }
 
@@ -164,6 +183,7 @@
         &__btn {
             button {
                 width: 260px;
+                font-size: 23px;
             }
         }
         &__descr {
