@@ -1,8 +1,14 @@
-
+* {
+    margin: 0;
+    padding: 0;
+}
 
 
 @import './blocks/upper';
 @import './blocks/hamburger';
+
+@import './blocks/title';
+@import './blocks/services';
 @import './blocks/media';
 
 

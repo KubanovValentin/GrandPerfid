@@ -6,13 +6,12 @@
         display: flex;
         list-style: none;
         li {
-            display: inline-block;
             position: relative;
             z-index: 1;
             margin-right: 40px;
+            border-bottom: 2px solid #f66f4d00;
             &:hover {
-                
-                border-bottom: 2px solid #F66E4D;
+                border-bottom: 3px solid #F66E4D;
                 &::after {
                     content: '';
                     position: absolute;
