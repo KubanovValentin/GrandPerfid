@@ -1,3 +1,8 @@
+.title {
+    font-size: 110px;
+    margin-bottom: 70px;
+    }
+
 .intelligence {
     padding-top: 200px;
     padding-bottom: 10px;
@@ -9,11 +14,14 @@
     &__blocks {
         display: flex;
         justify-content: space-between;
-
     }
     &__block {
         max-width: 350px;
         padding: 15px;
+        img {
+            width: 230px;
+            height: 180px;
+        }
     }
     &__title {
         font-size: 30px;
@@ -27,7 +35,3 @@
         color: #000000;
     }
 }
-.title {
-    font-size: 110px;
-    margin-bottom: 70px;
-    }
