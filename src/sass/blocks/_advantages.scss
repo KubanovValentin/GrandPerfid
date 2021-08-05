@@ -1,0 +1,33 @@
+.advantages {
+    padding-top: 190px;
+    &__wrapper {
+        display: flex;
+    }
+    &__list {
+        margin-left: 115px;
+        width: 100%;
+        display: flex;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        li {
+            position: relative;
+            font-size: 30px;
+            list-style: none;
+            font-weight: 700;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-color: #F66E4D;
+                border-radius: 100%;
+                top: 8px;
+                left: -40px;
+            }
+        }
+    }
+}
