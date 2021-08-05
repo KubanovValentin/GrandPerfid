@@ -1,7 +1,15 @@
 .advantages {
     padding-top: 190px;
+    padding-bottom: 30px;
     &__wrapper {
         display: flex;
+    }
+    &__img {
+        width: 140%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
     &__list {
         margin-left: 115px;
