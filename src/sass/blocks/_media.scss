@@ -163,6 +163,9 @@
         &_adv {
             margin-left: 140px;
         }
+        &_expl {
+            margin-left: 170px ;
+        }
     }
     .advantages {
         &__list {
@@ -177,6 +180,9 @@
 @media (max-width: 767px) {
     .title {
         font-size: 50px;
+        &_expl {
+            margin-left: 70px ;
+        }
     }
     .upper {
         &__wrapper {
@@ -285,7 +291,40 @@
             margin-bottom: 93px;
         }
     }
-    
+    .explanation {
+        padding: 60px 20px 10px 20px;
+        .descr {
+            font-size: 25px;
+        }
+        .spoiler {
+            margin-top: 0;
+            summary {
+                .plus { 
+                    span {
+                        width: 30px;
+                        height: 4px;
+                    }
+                    
+                }
+            }
+            details[open] {
+                &::before {
+                    left: -20px;
+                    padding:0 20px;
+                }
+            }
+            details[open]>summary {
+                .minus {
+                    span {
+                        width: 30px;
+                        height: 4px;
+                    }
+                }
+            }
+        }
+        
+        
+    }
 }
 
 
