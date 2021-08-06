@@ -1,0 +1,36 @@
+.document {
+    padding-top: 200px;
+    .container {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    .image-slaider {
+        
+        padding: 30px 0 70px 0;
+        // &__wrapper {
+        //     background-color: rgb(255, 255, 255);
+        // }
+        // &__slide {
+        //     background-color: rgb(248, 239, 239);
+        // }
+        &__image {
+            text-align: center;
+            img  {
+                max-width: 90%;
+            }
+        }
+        .swiper-pagination {
+            
+            left: 15%;
+            width: 958px;
+            height: 5px;
+            background-color: #007083;
+            span {
+                background-color: #F66E4D;
+            }
+        }
+
+    }
+    
+    
+}
