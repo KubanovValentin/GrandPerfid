@@ -20,6 +20,16 @@
             font-size: 80px;
         }
     }
+    footer {
+        .footer {
+            &__navigation {
+                padding: 172px 35px 70px 176px;
+            }
+            &__map {
+                width: 65%;
+            }
+        }
+    }
 }
 
 
@@ -159,6 +169,23 @@
             margin-top: 80px;
         }
     }
+    footer {
+        .footer {
+            &__navInfo {
+                display: flex;
+                flex-direction: column;
+            }
+            &__navigation {
+                padding: 40px 32px 70px 117px;
+            }
+            &__map {
+                width: 65%;
+            }
+            &__performers {
+                margin-top: 120px;
+            }
+        }
+    }
 }
 
 
@@ -244,6 +271,28 @@
         }
         &__btn {
             margin-top: 25px;
+        }
+    }
+    footer {
+        .footer {
+            &__navInfo {
+                display: flex;
+                flex-direction: column;
+            }
+            &__navigation {
+                padding: 45px 15px 27px 122px;
+            }
+            &__map {
+                width: 100%;
+            }
+            &__performers {
+                margin-top: 120px;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+            &__adress {
+                margin-top: 40px;
+            }
         }
     }
 }
@@ -357,6 +406,39 @@
             button {
                 width: 260px;
                 font-size: 15px;
+            }
+        }
+    }
+    footer {
+        .footer {
+            &__wrapper {
+                flex-direction: column;
+            }
+            &__navInfo {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            &__navigation {
+                width: auto;
+                padding: 45px 20px 27px 20px;
+            }
+            &__map {
+                width: 100%;
+                display: none;
+                &_smoll {
+                    display: block;
+                }
+            }
+            
+            &__performers {
+                margin-top: 60px;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            &__perfLogo {
+                    margin-top: 20px;
             }
         }
     }

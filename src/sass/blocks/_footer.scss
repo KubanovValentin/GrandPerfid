@@ -5,12 +5,14 @@ footer {
             display: flex;
         }
         &__map {
-            width: 100%;  
+            width: 100%;
+            &_smoll {
+                display: none;
+            }
         }
         &__navigation {
             width: 100%;
-
-            padding: 172px 100px 100px 219px;
+            padding: 172px 100px 70px 219px;
         }
         &__navInfo {
             display: flex;
@@ -60,7 +62,7 @@ footer {
         &__performers {
             display: flex;
             justify-content: space-between;
-            margin-top: 105px;
+            margin-top: 140px;
         }
         &__perfText {
             font-size: 14px;
