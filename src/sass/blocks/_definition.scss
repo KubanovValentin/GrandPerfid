@@ -1,0 +1,57 @@
+.definition {
+    padding: 0 30% 100px 50px;
+    &__company {
+        position: relative;
+        padding: 110px 330px 150px 220px;
+        max-width: 1443px;
+        max-height: 785px;
+        background: transparent linear-gradient(61deg, #007083 0%, #05ADC9 100%) 0% 0% no-repeat padding-box;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 670px;
+            height: 600px;
+            background-color:#F94C23;
+            top: 10%;
+            right: -40%;
+            // -webkit-clip-path: circle(53.2% at 50% 53%);
+            // clip-path: circle(53.2% at 50% 53%);
+            // border-radius: 280px;
+            border-radius: 18em;
+            background: url(../../img/definition.png);
+            background-size: cover;
+
+        }
+    }
+    &__title {
+        color: #FFFFFF;
+        font-size: 100px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    &__text {
+        color: #FFFFFF;
+        font-size: 20px;
+
+        margin-bottom: 50px;
+    }
+    &__btn {
+        button {
+            font-size: 18px;
+            font-weight: 700;
+            width: 333px;
+            height: 75px; 
+            background: transparent linear-gradient(259deg, #FF896D 0%, #F94C23 100%) 0% 0% no-repeat padding-box;  
+            border:none;
+            border-radius: 38px;
+            -webkit-box-shadow: 3px 5px 46px 13px rgba(249, 80, 39, 0.2);
+            -moz-box-shadow: 3px 5px 46px 13px rgba(249, 80, 39, 0.2);
+            box-shadow: 3px 5px 46px 13px rgba(249, 80, 39, 0.2);
+            text-transform:uppercase;
+            &:hover {
+                border: 1px solid red;
+            }
+        }
+        
+    }
+}
