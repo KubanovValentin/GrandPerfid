@@ -1,0 +1,70 @@
+footer {
+    .footer {
+        background: #fff;
+        &__wrapper {
+            display: flex;
+        }
+        &__map {
+            width: 100%;  
+        }
+        &__navigation {
+            width: 100%;
+
+            padding: 172px 100px 100px 219px;
+        }
+        &__navInfo {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__denomination {
+            p {
+                font-size: 22px;
+                &:nth-child(2) {
+                    margin-top: 14px;
+                }
+            }
+        }
+        &__operating {
+            margin-top: 69px;
+            font-size: 22px;
+            p {
+                &:nth-child(1) {
+                    font-size: 14px;
+                    color: #ADB3BA;
+                    margin-bottom: 18px;
+                }
+            }
+        }
+        &__adress {
+            font-size: 22px;
+            p {
+                &:nth-child(1) {
+                    font-size: 14px;
+                    color: #ADB3BA;
+                    margin-bottom: 18px;
+                }
+            }
+            
+        }
+        &__tell {
+            margin-top: 44px;
+            font-size: 22px;
+            p {
+                &:nth-child(1) {
+                    font-size: 14px;
+                    color: #ADB3BA;
+                    margin-bottom: 18px;
+                }
+            }
+        }
+        &__performers {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 105px;
+        }
+        &__perfText {
+            font-size: 14px;
+            color: #ADB3BA;
+        }
+    }
+}
