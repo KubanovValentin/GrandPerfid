@@ -14,13 +14,9 @@
             background-color:#F94C23;
             top: 10%;
             right: -40%;
-            // -webkit-clip-path: circle(53.2% at 50% 53%);
-            // clip-path: circle(53.2% at 50% 53%);
-            // border-radius: 280px;
             border-radius: 18em;
             background: url(../../img/definition.png);
             background-size: cover;
-
         }
     }
     &__title {
@@ -29,10 +25,10 @@
         font-weight: 700;
         margin-bottom: 30px;
     }
+    
     &__text {
         color: #FFFFFF;
         font-size: 20px;
-
         margin-bottom: 50px;
     }
     &__btn {

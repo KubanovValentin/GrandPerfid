@@ -1,11 +1,5 @@
 @media (max-width:1600px) {
     .upper {
-        // &__wrapper {
-        //     background-size:cover;
-        //     // background-position:  right center;
-        //     background-position:  100% 100%;
-        // }
-
         .header {
             padding: 40px 50px 0 20px;
         }
@@ -16,6 +10,14 @@
         }
         .element {
             right: 30px;
+        }
+    }
+    .definition {
+        &__company {
+            padding: 100px 330px 110px 150px;
+        }
+        &__title {
+            font-size: 80px;
         }
     }
 }
@@ -101,6 +103,20 @@
             
         }
     }
+    .definition {
+        &__company {
+            padding:40px 160px 40px 50px;
+            &::after {
+                content: '';
+                width: 450px;
+                height: 300px;
+                top: 140px;
+            }
+        }
+        &__title {
+            font-size: 80px;
+        }
+    }
 }
 
 
@@ -112,6 +128,35 @@
         &__descr {
             font-size: calc(40px + 16*(100vw/1600));
             margin-bottom: 150px;
+        }
+    }
+    .definition {
+        padding: 0 5% 100px 50px;
+        &__company {
+            padding: 35px 50px 80px 50px;
+            max-width: 980px;
+            max-height: 700px;
+            &::after {
+                content: '';
+                width: 400px;
+                height: 300px;
+                top: 265px;
+                left: 515px;
+            }
+        }
+        &__title {
+            font-size: 50px;
+            
+        }
+        &__text {
+            span {
+                display: block;
+                width: 500px;
+            }
+            
+        }
+        &__btn {
+            margin-top: 80px;
         }
     }
 }
@@ -170,6 +215,35 @@
                 max-width: 700px;
                 margin-left: -350px;
             }
+        }
+    }
+    .definition {
+        padding: 0 5% 100px 50px;
+        &__company {
+            padding: 35px 50px 80px 50px;
+            max-width: 980px;
+            max-height: 700px;
+            &::after {
+                content: '';
+                width: 333px;
+                height: 248px;
+                top: 286px;
+                left: 362px;
+            }
+        }
+        &__title {
+            font-size: 50px;
+            
+        }
+        &__text {
+            span {
+                display: block;
+                width: 275px;
+            }
+            
+        }
+        &__btn {
+            margin-top: 25px;
         }
     }
 }
@@ -253,6 +327,36 @@
             .swiper-pagination {
                 max-width: 300px;
                 margin-left: -150px;
+            }
+        }
+    }
+    .definition {
+        padding: 0 10px 100px 10px;
+        &__company {
+            padding: 35px 20px 42px 22px;
+            max-width: 980px;
+            max-height: 1063px;
+            text-align: center;
+            &::after {
+                content: '';
+                display: none;
+            }
+        }
+        &__title {
+            font-size: 40px;
+            
+        }
+        &__text {
+            span {
+                display: inline;
+                width: 275px;
+            }
+            
+        }
+        &__btn {
+            button {
+                width: 260px;
+                font-size: 15px;
             }
         }
     }
