@@ -1,12 +1,15 @@
 .document {
+    .title {
+        text-align: center;
+    }
     padding-top: 200px;
     .container {
         max-width: 1300px;
         margin: 0 auto;
     }
     .image-slaider {
-        
         padding: 30px 0 70px 0;
+        align-items: center;
         // &__wrapper {
         //     background-color: rgb(255, 255, 255);
         // }
@@ -20,17 +23,18 @@
             }
         }
         .swiper-pagination {
-            
-            left: 15%;
-            width: 958px;
+            max-width: 900px;
             height: 5px;
             background-color: #007083;
+            
+            position: absolute;
+            left: 50%;
+            top: 0;
+            margin-left: -450px;
+            
             span {
                 background-color: #F66E4D;
             }
         }
-
     }
-    
-    
 }

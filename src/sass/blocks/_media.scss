@@ -114,18 +114,6 @@
             margin-bottom: 150px;
         }
     }
-    // .explanation {
-    //     .spoiler {
-    //         details[open]>summary {
-    //             &::before {
-    //                 content: '';
-    //                 left: -25px;
-    //                 width: 105%;
-    //             }
-    //         }
-    //     }
-        
-    // }
 }
 
 
@@ -172,6 +160,15 @@
             margin-left: 90px;
             li {
                 font-size: 25px;
+            }
+        }
+    }
+    .document {
+        padding-top: 90px;
+        .image-slaider {
+            .swiper-pagination {
+                max-width: 700px;
+                margin-left: -350px;
             }
         }
     }
@@ -249,6 +246,14 @@
     .title {
         &_adv {
             margin-left: 30px;
+        }
+    }
+    .document {
+        .image-slaider {
+            .swiper-pagination {
+                max-width: 300px;
+                margin-left: -150px;
+            }
         }
     }
 }
