@@ -89,6 +89,9 @@
                 font-weight: 700;
             }
         }
+        &_smoll {
+            display: none;
+        }
     }
     &__descr {
         font-size: 100px;
@@ -157,7 +160,7 @@
             textarea {
                 min-height: 130px;
                 resize: vertical;
-                padding: 20px;
+                padding: 10px;
             } 
             .checkbox {
                 &__input {
