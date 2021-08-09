@@ -1,4 +1,6 @@
 .servicesPage {
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #E2FAFE 100%) 0% 0% no-repeat padding-box;
+    padding: 0 20px;
     &__wrapper {
         width: 100%;
         background: transparent linear-gradient(180deg, #FFFFFF 0%, #E2FAFE 100%) 0% 0% no-repeat padding-box;
@@ -9,7 +11,6 @@
         justify-content: space-between;
         align-items: center;
         padding: 40px 70px 0 20px;
-        margin-bottom: 117px;
     }
     .logo {
         position: relative;

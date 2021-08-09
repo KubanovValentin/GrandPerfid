@@ -516,6 +516,22 @@
             margin-bottom: 30px;
         }
     }
+    .servicesPage {
+        &__items-lawyer, &__items-accountant {
+            grid-template-columns: 1fr;
+            margin-bottom: 100px;;
+        }
+        // &__items-accountant {
+        //     grid-template-columns: 1fr;
+        //     margin-bottom: 100px;
+        // }
+        &__items-other {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            gap: 20px;
+            margin-bottom: 100px;
+        }
+    }
 }
 
 
@@ -620,6 +636,36 @@
             }
         }
         
+    }
+    .servicesPage {
+        .header {
+            padding: 0;
+            justify-content: center;
+        }
+        .logo {
+            top: 60px;
+            margin-bottom: 100px;
+        }
+        .element {
+            top:20px;
+            left: 30px;
+        }
+        .hamburger {
+            right: 30px;
+            top: 30px;
+        }
+        &__title {
+            
+            padding-left: 20px;
+            a {
+                font-size: 25px;
+            }
+        }
+        &__subtitle {
+            a {
+                font-size: 21px;
+            }
+        }
     }
 }
 
