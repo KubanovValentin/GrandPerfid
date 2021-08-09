@@ -1,4 +1,5 @@
 @media (max-width:1600px) {
+    
     .upper {
         .header {
             padding: 40px 50px 0 20px;
@@ -118,6 +119,13 @@
             
         }
     }
+    .advantages {
+        .title {
+            &_adv {
+                margin-left: 200px;
+            }
+        }
+    }
     .definition {
         &__company {
             padding:40px 160px 40px 50px;
@@ -136,6 +144,7 @@
 
 
 @media (max-width:1200px) {
+    
     .upper {
         .container {
             width: 900px;    
@@ -233,11 +242,13 @@
         &_adv {
             margin-left: 140px;
         }
-        &_expl {
-            margin-left: 170px ;
-        }
     }
     .advantages {
+        .title {
+            &_adv {
+                margin-left: 50px;
+            }
+        }
         &__list {
             margin-left: 90px;
             li {

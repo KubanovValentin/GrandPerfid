@@ -1,6 +1,11 @@
 .advantages {
     padding-top: 190px;
     padding-bottom: 30px;
+    .title {
+        &_adv {
+            margin-left: 519px;
+        }
+    }
     &__wrapper {
         display: flex;
         padding: 0 20px;
