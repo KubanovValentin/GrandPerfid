@@ -558,6 +558,16 @@
             text-align: center;
         }
     }
+    .questionsPage {
+        .explanation {
+            .title {
+                &_quest {
+                    margin-left: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
 
@@ -710,6 +720,15 @@
         .hamburger {
             right: 30px;
             top: 30px;
+        }
+    }
+    .questionsPage {
+        .explanation {
+            details {
+                summary {
+                    padding: 20px 55px 28px 35px;
+                }
+            }
         }
     }
 }
