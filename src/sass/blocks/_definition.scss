@@ -47,6 +47,10 @@
             &:hover {
                 border: 1px solid red;
             }
+            &:active {
+                top: 3px;
+                box-shadow:0 2px 0 #161b13;
+            }
         }
         
     }

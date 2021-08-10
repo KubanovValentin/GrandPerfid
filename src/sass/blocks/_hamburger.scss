@@ -5,6 +5,7 @@
     &__list {
         display: flex;
         list-style: none;
+        align-items: center;
         li {
             position: relative;
             z-index: 1;
