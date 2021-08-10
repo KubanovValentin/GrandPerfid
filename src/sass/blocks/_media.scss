@@ -499,7 +499,6 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-around;
-
             }
         }
         &__info-1 {
@@ -569,6 +568,23 @@
         }
     }
     .helpPage {
+        table {
+            td {
+                // padding-left: 35px;
+                padding: 20px;
+                font-size: 20px;
+            }
+            .colorOringe {
+                padding: 15px;
+                font-size: 25px;
+            }
+            .application {
+                font-size: 20px;
+            }
+        }
+        
+    }
+    .programPage {
         table {
             td {
                 // padding-left: 35px;
@@ -753,6 +769,68 @@
         }
     }
     .helpPage {
+        .header {
+            padding: 0;
+            justify-content: center;
+        }
+        .logo {
+            top: 60px;
+            margin-bottom: 100px;
+        }
+        .element {
+            top:20px;
+            left: 30px;
+        }
+        .hamburger {
+            right: 30px;
+            top: 30px;
+        }
+        .title {
+            &_help {
+                text-align: center;
+            }
+        }
+        .container {
+            padding: 0;
+        }
+        &__title {
+            text-align: center;
+        }
+        .modalBlock {
+            padding: 53px 21px 50px 34px;
+            &__btn {
+                button {
+                    width: 250px;
+                }
+            }
+            &__text {
+                padding: 0;
+                width: 160px;
+            }
+            &__price {
+                margin-left: 20px;
+            }
+        }
+        table {
+            td {
+            
+                padding: 10px;
+                font-size: 20px;
+            }
+            .colorOringe {
+                padding: 10px;
+                font-size: 15px;
+            }
+            .cost, .application {
+                width: 90px;
+            }
+        }
+        &__text {
+            padding: 0 30px;
+        }
+        
+    }
+    .programPage {
         .header {
             padding: 0;
             justify-content: center;
