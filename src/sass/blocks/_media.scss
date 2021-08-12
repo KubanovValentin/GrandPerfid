@@ -238,6 +238,20 @@
             }
         }
     }
+    .legalServicesPage {
+        .title {
+            font-size: 60px;
+        }
+        &__title {
+            font-size: 40px;
+        }
+        table {
+            .first {
+                width: 140px;
+                padding: 0px 5px;
+            }
+        }
+    }
 }
 
 
@@ -359,6 +373,22 @@
             padding: 5px;
         }
     }
+    .legalServicesPage{
+        table {
+            .cost {
+                width: 52px;
+                margin: 0;
+                padding: 0;
+                font-size: 15px;
+                margin: 0 auto;
+            }
+            .colorOringe {
+                width: 90px;
+                padding: 0 10px;
+                text-align: center;
+            }
+        }
+    } 
 }
 
 @media (max-width: 767px) {
@@ -978,6 +1008,52 @@
                 left: 42%;
             }
         }  
+    }
+    .legalServicesPage {
+        .title {
+            font-size: 40px;
+            text-align: center;
+        }
+        .header {
+            padding: 0;
+            justify-content: center;
+            margin-bottom: 70px;
+        }
+        .logo {
+            top: 60px;
+            margin-bottom: 15px;
+        }
+        .element {
+            top:20px;
+            left: 30px;
+        }
+        .hamburger {
+            right: 30px;
+            top: 30px;
+        }
+        .container {
+            padding: 0 10px;
+        }
+
+        &__title {
+            margin-top: 50px;
+            margin-bottom: 25px;
+            text-align: center;
+            font-size: 30px;   
+        }
+        table {
+            .first {
+                width: 130px;
+                font-size: 18px;
+            }
+        }
+        .tblLess {
+            display: block;
+
+        }
+        .tblAnymore {
+            display: none;
+        }
     }
 }
 
