@@ -205,6 +205,39 @@
             padding: 0 5% 100px 5%;
         }
     }
+    .articlesSliderPage {
+        .image-slaider {
+            &__descr {
+                padding: 0 125px;
+                margin-bottom: 140px;
+            }
+            &__title {
+                font-size: 45px;
+            }
+            .swiper-button-next, .swiper-button-prev {
+                width: 50px;
+                height: 50px;
+                top: 96%;
+                &::before {
+                    display: none;
+                }
+            }
+            .image-slaider-main {
+                width: 50px;
+                height: 50px;
+                top: 94.9%;
+                a {
+                    width: 50px;
+                    height: 50px;
+                }
+                span {
+                    top: 47%;
+                    left: 28%;
+                }
+
+            }
+        }
+    }
 }
 
 
@@ -601,6 +634,20 @@
         }
         
     }
+    .articlesSliderPage {
+        .image-slaider {
+            margin-top: 60px;
+            &__image {
+                padding: 0 20px;
+            }
+            &__descr {
+                padding: 0 50px;
+            }
+            .image-slaider-main {
+                top: 95%;
+            }
+        }
+    }
 }
 
 
@@ -891,6 +938,46 @@
             padding: 0 30px;
         }
         
+    }
+    .articlesSliderPage {
+        .header {
+            padding: 0;
+            justify-content: center;
+        }
+        .logo {
+            top: 60px;
+            margin-bottom: 15px;
+        }
+        .element {
+            top:20px;
+            left: 30px;
+        }
+        .hamburger {
+            right: 30px;
+            top: 30px;
+        }
+        .image-slaider {
+            &__descr {
+                padding: 0 10px;
+                margin-bottom: 90px;
+            }
+            &__title {
+                font-size: 35px;
+                margin-bottom: 20px;
+            }
+            .swiper-button-next {
+                left: 73%;
+                top: 98%;
+            }
+            .swiper-button-prev {
+                left: 12%;
+                top: 98%;
+            }
+            .image-slaider-main {
+                top: 97.2%;
+                left: 42%;
+            }
+        }  
     }
 }
 
