@@ -1,0 +1,94 @@
+.accountingServicePage{
+    padding-bottom: 100px;
+    .container {
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+    .header {
+        margin-bottom: 117px;
+    }
+    
+    &__title {
+        font-size: 70px;
+        color: #000000;
+        font-weight: 700;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+    &__staff {
+        font-size: 20px;
+        color: #F66E4D;
+        margin-top: 30px;
+
+    }
+    table {
+        color: #fff;
+        width: 100%;
+        background-color: #FFFFFF;
+        margin: 0 auto;
+        border: none;
+        font-size: 20px;
+        .cost {
+            width: 120px;
+            font-size: 18px;
+            span {
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+        td {
+            // padding-left: 35px;
+            padding: 10px 10px 10px 35px;
+            border: none;
+        }
+        .colorOringe {
+            // width: 120px;
+            height: 100px;
+            // background: #F66E4D;
+            // //     .application {
+            // //         display: block;
+            // //         color: #fff;
+            // //         text-decoration: none;
+            // //         text-align: center;
+            // //         font-size: 18px;
+            // //     }
+            //     .cost {
+            //         display: none;
+            //     }
+            // // }
+        }
+        #colorOringe {
+            background: #F66E4D;
+            .application {
+                padding: 0;
+                margin: 0;
+                width: 140px;
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+                font-size: 18px;
+            }
+        }
+        .first {
+            width: 150px;
+            text-align: center;
+            padding: 0 20px ;
+        }
+        tr {
+            border: none;
+            background-color: #007083;
+            &:nth-child(even) {
+                // background-color: #006f83a8;
+                background-color: #318D9C;
+            }
+        }
+        
+    }
+    .tblLess {
+        display: none;
+    }
+    
+}
+
