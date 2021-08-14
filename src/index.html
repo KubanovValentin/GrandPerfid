@@ -45,7 +45,7 @@
             <div class="container">
                 <h2 class="upper__descr">Сайт для тех, кто хочет<br> заниматься своим<br>делом и не думать о <br>проблемах</h2>
                 <div class="upper__btn">
-                    <button>Оставить заявку</button>
+                    <button data-modal='application' class="" >Оставить заявку</button>
                 </div>
             </div>
         </div>
@@ -254,7 +254,7 @@
                 <h3 class="definition__title">О компании</h3>
                 <p class="definition__text">Сотрудники компании с более чем 13-ти летним опытом работы “ГрандПерфид” осуществляет полное сопровождение в решении любых юридических вопросов с государственными органами. Мы в первую очередь Ваш помощник в результативном общении с представителями власти, будь то визит проверяющей делегации, либо необходимость получения от государственных органов определенного решения. <span> Обширный опыт позволяет нам сделать Вас победителем любого спорного вопроса. Комплекс предлагаемых услуг будет оказан Вам специалистами, которые любят свою работу, уважают каждого клиента, берегут его время и деньги.</span> </p>
                 <div class="definition__btn">
-                    <button>Получить консультацию</button>
+                    <button data-modal="consultation" class="">Получить консультацию</button>
                 </div>
             </div>
         </div>
@@ -305,6 +305,43 @@
             </div>
         </div>
     </footer>
+
+    <div class="overlay">
+        <div class="modal" id="application">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Оставить заявку</div>
+            <form class="form" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+                
+                <button class="button button_submit">Отправить</button>
+            </form>
+        </div>
+
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Получить консультацию</div>
+            <form class="feed-form feed-form_modal" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+                
+                <button class="button button_submit">Отправить</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваша заявка отправлена!</div>
+            <div class="modal__descr">Мы свяжемся с вами в ближайшее время</div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>  
+    <script src="js/jquery.validate.min.js"></script>  
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>  
     <script defer src="js/slaider.js"></script>
     <script defer src="js/script.js"></script>
