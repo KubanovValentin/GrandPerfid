@@ -17,10 +17,12 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 // -------------------------------------------------modal
-    $('[data-modal=application], [data-modal=consultation]').on('click', function() {
-        $('.overlay, #application, #consultation').fadeIn('slow');
+    $('[data-modal=application]').on('click', function() {
+        $('.overlay, #application').fadeIn('slow');
     });
-
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
     $('.modal__close').on('click', function() {
         $('.overlay, #application, #consultation, #thanks').fadeOut('slow');
     });
@@ -60,4 +62,18 @@ function validateForms(form) {
 
     $('input[name=phone]').mask("+7 (999) 999-99-99");
 
+
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+    console.log(scrollbar);
+    document.querySelector('[href="#openModal"], [href="#openModal1"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModal, #openModal1').style.marginLeft = scrollbar;
+    });
+    document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModal, #openModal1').style.marginLeft = '0px';
+    });
+  });
