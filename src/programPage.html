@@ -49,7 +49,7 @@
                             <div class="modalBlock__price">1000 бел. руб.</div>
                         </div>
                         <div class="modalBlock__btn">
-                            <button>Получить разрешение</button>
+                            <button data-modal="programPage">Получить разрешение</button>
                         </div>
                     </div>
                     <div class="programPage__title">Услуги</div>
@@ -58,9 +58,9 @@
                             <tbody>
                                 <tr>
                                     <td colspan="6">Сопровождение проверки</td>
-                                    <td class="colorOringe">
-                                        <p class="cost"><span>1000</span> бел. руб</p>
-                                        <a  class="application" href="#">Оставить заявку</a>
+                                    <td id="colorOringe" class="colorOringe">
+                                        <!-- <p class="cost"><span>1000</span> бел. руб</p> -->
+                                        <a  class="application" href="#openModal14">Оставить заявку</a>
                                     </td>
                                     
                                 </tr>
@@ -68,7 +68,7 @@
                                     <td colspan="6">Сопровождение мониторинга</td>
                                     <td class="colorOringe">
                                         <p class="cost"><span>300</span> бел. руб</p>
-                                        <a  class="application" href="#">Оставить заявку</a>
+                                        <!-- <a  class="application" href="#">Оставить заявку</a> -->
                                     </td>
                                     
                                 </tr>
@@ -76,7 +76,7 @@
                                     <td colspan="6">Подготовка возражений на акт проверки</td>
                                     <td class="colorOringe">
                                         <p class="cost"><span>500</span> бел. руб</p>
-                                        <a  class="application" href="#">Оставить заявку</a>
+                                        <!-- <a  class="application" href="#">Оставить заявку</a> -->
                                     </td>
                                     
                                 </tr>
@@ -84,7 +84,7 @@
                                     <td colspan="6">Обжалование решения контролирующего органа</td>
                                     <td class="colorOringe">
                                         <p class="cost"><span>300</span> бел. руб</p>
-                                        <a  class="application" href="#">Оставить заявку</a>
+                                        <!-- <a  class="application" href="#">Оставить заявку</a> -->
                                     </td>
                                     
                                 </tr>
@@ -92,7 +92,7 @@
                                     <td colspan="6">Обжалование постановления по делу об административном правонарушении</td>
                                     <td class="colorOringe">
                                         <p class="cost"><span>700</span> бел. руб</p>
-                                        <a  class="application" href="#">Оставить заявку</a>
+                                        <!-- <a  class="application" href="#">Оставить заявку</a> -->
                                     </td>
                                     
                                 </tr>
@@ -100,7 +100,7 @@
                                     <td colspan="6">Обжалование постановления по делу об административном правонарушении</td>
                                     <td class="colorOringe">
                                         <p class="cost"><span>500</span> бел. руб</p>
-                                        <a  class="application" href="#">Оставить заявку</a>
+                                        <!-- <a  class="application" href="#">Оставить заявку</a> -->
                                     </td>
                                     
                                 </tr>
@@ -108,7 +108,7 @@
                                     <td colspan="6">Подготовка сотрудников к даче устных объяснений</td>
                                     <td class="colorOringe">
                                         <p class="cost"><span>500</span> бел. руб</p>
-                                        <a  class="application" href="#">Оставить заявку</a>
+                                        <!-- <a  class="application" href="#">Оставить заявку</a> -->
                                     </td>
                                     
                                 </tr>
@@ -178,7 +178,47 @@
             </div>
         </div>
     </footer>
+    
+    <div class="overlay">
+        <div class="modal" id="programPage">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Отправить заявку</div>
+            <form class="feed-form feed-form_modal" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+                
+                <button class="button button_submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="openModal14" class="modalLink">
+        <div class="modalLink-dialog">
+            <div class="modalLink-content">
+                <div class="modalLink-header">
+                    <h3 class="modalLink-title">Сопровождение проверки</h3>
+                    <form class="feed-form feed-form_modal" action="#">
+                        <input name="name" required placeholder="Ваше имя" type="text">
+                        <input name="phone" required placeholder="Ваш телефон">
+                        <input name="email" required placeholder="Ваш E-mail" type="email">
+                        
+                        <button class="button button_submit">Отправить</button>
+                    </form>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modalLink-body">
+                    <p>Стоимость - 1000 бел. руб..</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script defer src="js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>  
+    <script src="js/jquery.validate.min.js"></script>  
+    <script src="js/script.js"></script>
 </body>
 </html>

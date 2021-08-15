@@ -20,17 +20,24 @@ window.addEventListener('DOMContentLoaded', () => {
     $('[data-modal=application]').on('click', function() {
         $('.overlay, #application').fadeIn('slow');
     });
-    $('[href="#openModal"], [href="#openModal1"]').on('click', function() {
-        $('.overlay, #openModal').fadeIn('slow');
-    });
+    // $('[href="#openModal"]').on('click', function() {
+    //     $('.overlay, #openModal').fadeIn('slow');
+    // });
     $('[data-modal=consultation]').on('click', function() {
         $('.overlay, #consultation').fadeIn('slow');
     });
+    $('[data-modal=specialPermission]').on('click', function() {
+        $('.overlay, #specialPermission').fadeIn('slow');
+    });
+    $('[data-modal=programPage]').on('click', function() {
+        $('.overlay, #programPage').fadeIn('slow');
+    });
     $('.modal__close').on('click', function() {
-        $('.overlay, #application, #consultation, #thanks').fadeOut('slow');
+        $('.overlay, #application, #consultation, #specialPermission, #programPage, #thanks').fadeOut('slow');
     });
 
-    
+    // $('[.modalLink]').on('click', function() {
+    // });
 
 function validateForms(form) {
     $(form).validate({
@@ -75,7 +82,6 @@ function validateForms(form) {
 //         document.body.style.overflow = 'hidden';
 //         document.querySelector('#openModal, #openModal1').style.marginLeft = scrollbar;
 //         document.body.style.overflow = 'hidden';
-//         document.html.style.marginRight = '17px';
 //     });
 //     document.querySelector('[href="#close"]').addEventListener('click', function () {
 //         document.body.style.overflow = 'visible';

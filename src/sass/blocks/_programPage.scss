@@ -91,18 +91,28 @@
         }
         .colorOringe {
             height: 100px;
-            &:hover {
-                background: #F66E4D;
-                .application {
-                    display: block;
-                    color: #fff;
-                    text-decoration: none;
-                    text-align: center;
-                    font-size: 18px;
-                }
-                .cost {
-                    display: none;
-                }
+            // &:hover {
+            //     background: #F66E4D;
+            //     .application {
+            //         display: block;
+            //         color: #fff;
+            //         text-decoration: none;
+            //         text-align: center;
+            //         font-size: 18px;
+            //     }
+            //     .cost {
+            //         display: none;
+            //     }
+            // }
+        }
+        #colorOringe {
+            background: #F66E4D;
+            .application {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+                font-size: 18px;
             }
         }
         tr {
