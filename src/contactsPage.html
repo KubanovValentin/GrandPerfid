@@ -78,8 +78,23 @@
                     </div>
                 </div>
                 <div class="contact__block2">
-                    <div class="form">
-                        <form action="#" id="form" class="form__body">
+                    <div id="form-contact" class="form">
+                        <form class="form form_contact" action="#">
+                            <h2 class="form__title">Обратная связь</h2>
+                            <input name="name" required placeholder="Ваше имя" type="text">
+                            <input name="phone" required placeholder="Ваш телефон">
+                            <input name="email" required placeholder="Ваш E-mail" type="email">
+                            <textarea name="message" placeholder="Ваше сообщение"></textarea>
+
+                            <div class="form__item">
+                                <div class="checkbox">
+                                    <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input">
+                                    <label for="formAgreement" class="checkbox__label"><span>Отправляя данную форму, вы принимаете и соглашаетесь с <a href="#">Условиями предоставления услуг и Политикой конфиденциальности*</span></a></label>
+                                </div>
+                            </div>
+                            <button type="submit" class="form__button">Отправить</button>
+                        </form>
+                        <!-- <form action="#" id="form" class="form__body">
                             <h2 class="form__title">Обратная связь</h2>
                             <div class="form__item">
                                 <label for="formName" class="form__label"><span>Имя*</span></label>
@@ -105,7 +120,7 @@
                                 </div>
                             </div>
                             <button type="submit" class="form__button">Отправить</button>
-                        </form>
+                        </form> -->
                     </div>
                     
                 </div>

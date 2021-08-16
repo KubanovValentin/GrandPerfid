@@ -183,12 +183,19 @@
         <div class="modal" id="programPage">
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Отправить заявку</div>
-            <form class="feed-form feed-form_modal" action="#">
+            <form class="form form_main" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text">
                 <input name="phone" required placeholder="Ваш телефон">
                 <input name="email" required placeholder="Ваш E-mail" type="email">
-                
-                <button class="button button_submit">Отправить</button>
+                <textarea name="message" placeholder="Ваше сообщение"></textarea>
+
+                <div class="form__item">
+                    <div class="checkbox">
+                        <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input">
+                        <label for="formAgreement" class="checkbox__label"><span>Отправляя данную форму, вы принимаете и соглашаетесь с <a href="#">Условиями предоставления услуг и Политикой конфиденциальности*</span></a></label>
+                    </div>
+                </div>
+                <button type="submit" class="form__button">Отправить</button>
             </form>
         </div>
     </div>
@@ -198,17 +205,21 @@
             <div class="modalLink-content">
                 <div class="modalLink-header">
                     <h3 class="modalLink-title">Сопровождение проверки</h3>
-                    <form class="feed-form feed-form_modal" action="#">
+                    <form class="form form_main" action="#">
                         <input name="name" required placeholder="Ваше имя" type="text">
                         <input name="phone" required placeholder="Ваш телефон">
                         <input name="email" required placeholder="Ваш E-mail" type="email">
-                        
-                        <button class="button button_submit">Отправить</button>
+                        <textarea name="message" placeholder="Ваше сообщение"></textarea>
+        
+                        <div class="form__item">
+                            <div class="checkbox">
+                                <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input">
+                                <label for="formAgreement" class="checkbox__label"><span>Отправляя данную форму, вы принимаете и соглашаетесь с <a href="#">Условиями предоставления услуг и Политикой конфиденциальности*</span></a></label>
+                            </div>
+                        </div>
+                        <button type="submit" class="form__button">Отправить</button>
                     </form>
                     <a href="#close" title="Close" class="close">×</a>
-                </div>
-                <div class="modalLink-body">
-                    <p>Стоимость - <span>500</span> бел. руб.</p>
                 </div>
             </div>
         </div>
