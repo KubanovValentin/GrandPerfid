@@ -36,6 +36,7 @@
             padding: 0 100px 100px 130px;
         }
     }
+
 }
 
 
@@ -138,6 +139,11 @@
         }
         &__title {
             font-size: 80px;
+        }
+    }
+    .modalLink {
+        .modalLink-content {
+            min-width: 600px;
         }
     }
 }
@@ -419,6 +425,14 @@
             }
         }
     } 
+    .modalLink {
+        .modalLink-content {
+            min-width: 400px;
+        }
+        .modalLink-title {
+            font-size: 50px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -716,6 +730,16 @@
             .colorOringe {
                 width: 70px;
             }
+        }
+    }
+    .modalLink {
+        .modalLink-content {
+            max-width: 300px;
+            padding: 50px 50px;
+            text-align: center;
+        }
+        .modalLink-title {
+            font-size: 40px;
         }
     }
 }
@@ -1193,6 +1217,27 @@
             .colorOringe {
                 width: 60px;
             }
+        }
+    }
+    .modalLink {
+        .modalLink-content {
+            min-width: 280px;
+            padding: 60px 10px;
+            text-align: center;
+            border-radius: 60px;
+        }
+        .modalLink-title {
+            font-size: 20px;
+        }
+        .modalLink-body {
+            p {
+                font-size: 17px;
+            }
+        }
+        .close {
+            right: 0px;
+            top: -6px;
+            font-size: 25px;
         }
     }
 }
