@@ -84,6 +84,12 @@
   /* анимация перехода */
   pointer-events: none;
   /* элемент невидим для событий мыши */
+  &_modalForm {
+    .modalLink-content {
+      min-width: 800px;
+      padding: 44px 130px;
+    }
+  }
 }
 
 /* при отображении модального окно */

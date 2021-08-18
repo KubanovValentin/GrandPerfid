@@ -305,11 +305,50 @@
             }
         }
     }
+    .modalLink {
+        &_modalForm {
+            .modalLink-content {
+                min-width: 500px;
+                height: 600px;
+                padding: 44px 130px;
+                .modalLink-header {
+                    .modalLink-title {
+                        font-size: 40px;
+                    }
+                    .form {
+                        input {
+                            height: 30px;
+                        }
+                        textarea {
+                            min-height: 70px;
+                        }
+                        input, textarea {
+                            margin-bottom: 7px;
+                            width: 100%;
+                            font-size: 15px;
+                            &:focus {
+                                &::placeholder {
+                                    transform: translateY(-18px);
+                                    font-weight: 700;
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                    .close {
+                        font-size: 30px;
+                        right: 13px;
+                        top: -2px;
+                    }
+                }
+            }
+        }
+    }
     .modal {
         max-width: 420px;
         padding: 25px 30px 25px 30px;
         &__subtitle {
-            font-size: 40px;
+            font-size: 30px;
         }
         &__close {
             font-size: 30px;
@@ -516,14 +555,52 @@
         }
     } 
     .modalLink {
-        .modalLink-content {
-            min-width: 400px;
-        }
-        .modalLink-title {
-            font-size: 50px;
+        &_modalForm {
+            .modalLink-content {
+                min-width: 400px;
+                height: 402px;
+                padding: 40px 80px 80px;
+                .modalLink-header {
+                    .modalLink-title {
+                        font-size: 25px;
+                        margin-bottom: 10px;
+                    }
+                    .form {
+                        input {
+                            height:20px;
+                        }
+                        textarea {
+                            min-height: 50px;
+                        }
+                        input, textarea {
+                            margin-bottom: 5px;
+                            width: 100%;
+                            font-size: 15px;
+                            &:focus {
+                                &::placeholder {
+                                    transform: translateY(-13px);
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        &__button {
+                            height: 55px;
+                        }
+                        &__item {
+                            margin-bottom: 15px;
+                            margin-top: 10px;
+                        }
+                    }
+                    .close {
+                        font-size: 30px;
+                        right: 13px;
+                        top: -2px;
+                    }
+                }
+            }
         }
     }
-    
 }
 
 @media (max-width: 767px) {
@@ -832,6 +909,27 @@
         .modalLink-title {
             font-size: 40px;
         }
+        
+    }
+    .modalLink {
+        &_modalForm {
+            .modalLink-content {
+                padding: 31px 70px 70px;
+                .modalLink-header {
+                    .modalLink-title {
+                        font-size: 22px;
+                    }
+                }
+                .form {
+                    width: 100%;
+                    &__item {
+                        width: 100%;
+                        margin-bottom: 5px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
     }
     .privacyPolicy {
         .title{
@@ -849,19 +947,38 @@
 
 @media (max-width: 575px) {
     .title {
-        font-size: 35px;
+        font-size: 40px;
+        text-align: center;
     }
     .header {
+        padding: 0;
+        justify-content: center;
+        margin-bottom: 70px;
         .element {
             width: 30px;
         }
+    }
+    .logo {
+        top: 60px;
+        margin-bottom: 15px;
+    }
+    .element {
+        top:20px;
+        left: 30px;
+    }
+    .hamburger {
+        right: 30px;
+        top: 30px;
     }
     .upper {
         .container {
             width: 270px;  
         }
         .header {
-            padding: 70px 50px 0 50px;
+            padding: 5px 50px 0 50px;
+        }
+        .logo {
+            margin: 0 auto;
         }
         .menu__active {
             width: 65%;
@@ -920,21 +1037,6 @@
         }
     }
     .contact {
-        .header {
-            padding: 0;
-            justify-content: center;
-        }
-        .logo {
-            top: 60px;
-        }
-        .element {
-            top:20px;
-            left: 30px;
-        }
-        .hamburger {
-            right: 30px;
-            top: 30px;
-        }
         &__block2 {
             padding: 0;
         }
@@ -953,22 +1055,6 @@
         
     }
     .servicesPage {
-        .header {
-            padding: 0;
-            justify-content: center;
-        }
-        .logo {
-            top: 60px;
-            margin-bottom: 100px;
-        }
-        .element {
-            top:20px;
-            left: 30px;
-        }
-        .hamburger {
-            right: 30px;
-            top: 30px;
-        }
         &__title {
             
             padding-left: 20px;
@@ -982,25 +1068,6 @@
             }
         }
     }
-    .articlesPage {
-        .header {
-            padding: 0;
-            justify-content: center;
-            margin-bottom: 40px;
-        }
-        .logo {
-            top: 60px;
-            margin-bottom: 50px;
-        }
-        .element {
-            top:20px;
-            left: 30px;
-        }
-        .hamburger {
-            right: 30px;
-            top: 30px;
-        }
-    }
     .questionsPage {
         .explanation {
             details {
@@ -1011,22 +1078,6 @@
         }
     }
     .helpPage {
-        .header {
-            padding: 0;
-            justify-content: center;
-        }
-        .logo {
-            top: 60px;
-            margin-bottom: 100px;
-        }
-        .element {
-            top:20px;
-            left: 30px;
-        }
-        .hamburger {
-            right: 30px;
-            top: 30px;
-        }
         .title {
             &_help {
                 text-align: center;
@@ -1040,6 +1091,15 @@
         }
         .modalBlock {
             padding: 53px 21px 50px 34px;
+            .modalBlock {
+                &__text {
+                    padding: 0;
+                    width: 235px;
+                }    
+            }
+            &__title {
+                font-size: 25px;
+            }
             &__btn {
                 button {
                     width: 250px;
@@ -1073,22 +1133,6 @@
         
     }
     .programPage {
-        .header {
-            padding: 0;
-            justify-content: center;
-        }
-        .logo {
-            top: 60px;
-            margin-bottom: 100px;
-        }
-        .element {
-            top:20px;
-            left: 30px;
-        }
-        .hamburger {
-            right: 30px;
-            top: 30px;
-        }
         .title {
             &_help {
                 text-align: center;
@@ -1102,6 +1146,13 @@
         }
         .modalBlock {
             padding: 53px 21px 50px 34px;
+            .modalBlock {
+                &__text {
+                    padding: 0;
+                    width: 235px;
+                }    
+            }
+            
             &__btn {
                 button {
                     width: 250px;
@@ -1113,6 +1164,9 @@
             }
             &__price {
                 margin-left: 20px;
+            }
+            &__title {
+                font-size: 25px;
             }
         }
         table {
@@ -1135,22 +1189,6 @@
         
     }
     .articlesSliderPage {
-        .header {
-            padding: 0;
-            justify-content: center;
-        }
-        .logo {
-            top: 60px;
-            margin-bottom: 15px;
-        }
-        .element {
-            top:20px;
-            left: 30px;
-        }
-        .hamburger {
-            right: 30px;
-            top: 30px;
-        }
         .image-slaider {
             &__descr {
                 padding: 0 10px;
@@ -1175,27 +1213,6 @@
         }  
     }
     .legalServicesPage {
-        .title {
-            font-size: 40px;
-            text-align: center;
-        }
-        .header {
-            padding: 0;
-            justify-content: center;
-            margin-bottom: 70px;
-        }
-        .logo {
-            top: 60px;
-            margin-bottom: 15px;
-        }
-        .element {
-            top:20px;
-            left: 30px;
-        }
-        .hamburger {
-            right: 30px;
-            top: 30px;
-        }
         .container {
             padding: 0 10px;
         }
@@ -1221,27 +1238,6 @@
         }
     }
     .accountingServicePage {
-        .title {
-            font-size: 40px;
-            text-align: center;
-        }
-        .header {
-            padding: 0;
-            justify-content: center;
-            margin-bottom: 70px;
-        }
-        .logo {
-            top: 60px;
-            margin-bottom: 15px;
-        }
-        .element {
-            top:20px;
-            left: 30px;
-        }
-        .hamburger {
-            right: 30px;
-            top: 30px;
-        }
         .container {
             padding: 0 10px;
         }
@@ -1283,27 +1279,6 @@
         }
     }
     .otherServicePage {
-        .title {
-            font-size: 40px;
-            text-align: center;
-        }
-        .header {
-            padding: 0;
-            justify-content: center;
-            margin-bottom: 70px;
-        }
-        .logo {
-            top: 60px;
-            margin-bottom: 15px;
-        }
-        .element {
-            top:20px;
-            left: 30px;
-        }
-        .hamburger {
-            right: 30px;
-            top: 30px;
-        }
         .container {
             padding: 0 10px;
         }
@@ -1341,11 +1316,42 @@
             font-size: 25px;
         }
     }
+    .modalLink {
+        &_modalForm {
+            .modalLink-content {
+                height: 402px;
+                padding: 10px 10px 80px 10px;
+                .modalLink-header {
+                    .modalLink-title {
+                        font-size: 18px;
+                    }
+                    .form {
+                        input, textarea {
+                        width: 70%;
+                        }
+                        &__button {
+                            width: 200px;
+                            height: 35px;
+                        }
+                        .error {
+                            font-size: 13px;
+                        }
+                    }
+                    .close {
+                        font-size: 25px;
+                        right: 9px;
+                        top: -7px;
+                    }
+                }
+                
+            }
+        }
+    }
     .modal {
         max-width: 270px;
         padding: 5px 15px 9px 15px;
         &__subtitle {
-            font-size: 30px;
+            font-size: 20px;
             margin-bottom: 10px;
         }
         .form {
@@ -1380,33 +1386,12 @@
             .checkbox__label {
                 &::before {
                     content: '';
-                    margin-right: -26px;
+                    margin-right: 1px;
                 }
             }
         }
     }
     .privacyPolicy {
-        .title {
-            font-size: 40px;
-            text-align: center;
-        }
-        .header {
-            padding: 0;
-            justify-content: center;
-            margin-bottom: 70px;
-        }
-        .logo {
-            top: 60px;
-            margin-bottom: 15px;
-        }
-        .element {
-            top:20px;
-            left: 30px;
-        }
-        .hamburger {
-            right: 30px;
-            top: 30px;
-        }
         .title{
             &_policy {
                 padding: 0;
@@ -1420,5 +1405,6 @@
             margin-top: 20px;
         }
     }
+
 }
 

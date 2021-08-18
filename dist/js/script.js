@@ -66,28 +66,17 @@ function validateForms(form) {
     });
 }
 
-    // validateForms('#consultation-form');
+    // validateForms('#openModal13 form');
     validateForms('#consultation form');
     validateForms('#application form');
     validateForms('#specialPermission form');
     validateForms('#programPage form');
     validateForms('#form-contact form');
-    
+    validateForms('#openModal13 form');
+    validateForms('#openModal14 form');
+    validateForms('#openModal15 form');
+
+
     $('input[name=phone]').mask("+7 (999) 999-99-99");
-
-
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
-//     console.log(scrollbar);
-//     document.querySelector('[href="#openModal"], [href="#openModal1"]').addEventListener('click', function () {
-//         document.body.style.overflow = 'hidden';
-//         document.querySelector('#openModal, #openModal1').style.marginLeft = scrollbar;
-//         document.body.style.overflow = 'hidden';
-//     });
-//     document.querySelector('[href="#close"]').addEventListener('click', function () {
-//         document.body.style.overflow = 'visible';
-//         document.querySelector('#openModal, #openModal1').style.marginLeft = '0px';
-//     });
-//   });
