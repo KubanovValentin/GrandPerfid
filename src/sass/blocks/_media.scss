@@ -352,6 +352,16 @@
             }
         }
     }
+    .privacyPolicy {
+        .title{
+            &_policy {
+                font-size:70px;
+                max-width: 500px;
+                margin-left:5%;
+                margin-top: 120px;
+            }
+        }
+    }
 }
 
 
@@ -823,7 +833,16 @@
             font-size: 40px;
         }
     }
-    
+    .privacyPolicy {
+        .title{
+            &_policy {
+                font-size:50px;
+                max-width: 300px;
+                margin-left:5%;
+                margin-top: 60px;
+            }
+        }
+    }
 }
 
 
@@ -1364,6 +1383,41 @@
                     margin-right: -26px;
                 }
             }
+        }
+    }
+    .privacyPolicy {
+        .title {
+            font-size: 40px;
+            text-align: center;
+        }
+        .header {
+            padding: 0;
+            justify-content: center;
+            margin-bottom: 70px;
+        }
+        .logo {
+            top: 60px;
+            margin-bottom: 15px;
+        }
+        .element {
+            top:20px;
+            left: 30px;
+        }
+        .hamburger {
+            right: 30px;
+            top: 30px;
+        }
+        .title{
+            &_policy {
+                padding: 0;
+                font-size:26px;
+                width: 250px;
+                margin:0 auto;
+            }
+            
+        }
+        .container {
+            margin-top: 20px;
         }
     }
 }
