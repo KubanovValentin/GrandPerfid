@@ -15,6 +15,12 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.toggle('menu__active');
         });
     });
+// ----------------------------------------------------
+
+
+
+
+
 
 // -------------------------------------------------modal
     $('[data-modal=application]').on('click', function() {

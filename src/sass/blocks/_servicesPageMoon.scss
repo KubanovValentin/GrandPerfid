@@ -1,8 +1,17 @@
-.servicesPage {
-    background: transparent linear-gradient(180deg, #FFFFFF 0%, #E2FAFE 100%) 0% 0% no-repeat padding-box;
+.servicesPageMoon {
+    background: transparent linear-gradient(180deg, #005A6A 0%, #002127 100%) 0% 0% no-repeat padding-box;
     padding: 0 20px 171px 20px;
     &__wrapper {
         width: 100%;
+    }
+    .header {
+        .menu {
+            &__list {
+                a {
+                    color: #fff;
+                }
+            }
+        }
     }
     .container {
         max-width: 1370px;
@@ -29,6 +38,7 @@
         display: grid;
         grid-template-rows: 3fr 2fr 1fr;
         grid-template-columns:1fr 1fr;
+        
         gap:50px;
     }
     &__item {
@@ -39,7 +49,7 @@
             height: 100%;
         }
         &:hover {
-            .servicesPage__title {
+            .servicesPageMoon__title {
             -webkit-transform: translateY(0%);
             -moz-transform: translateY(0%);
             -ms-transform: translateY(0%);
@@ -84,11 +94,11 @@
     }
     &__subtitle {
         span {
-            border-bottom: 3px solid #e2fafe00;
+            border-bottom: 3px solid #00212700;
         }
         a {
             text-decoration: none;
-            color: #000;
+            color: #fff;
             font-size: 40px;
             font-weight: 700;
         }

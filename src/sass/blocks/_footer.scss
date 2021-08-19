@@ -1,6 +1,9 @@
 footer {
     .footer {
         background: #fff;
+        &_Moon {
+            color: black;
+        }
         &__wrapper {
             display: flex;
         }
@@ -9,10 +12,20 @@ footer {
             &_smoll {
                 display: none;
             }
+            &_Moon {
+                filter: invert(100%);
+            }
         }
         &__navigation {
             width: 100%;
             padding: 172px 100px 70px 219px;
+            &_Moon {
+                background: #000;
+                p {
+                    color:#fff;
+                }
+                
+            }
         }
         &__navInfo {
             display: flex;
@@ -69,4 +82,5 @@ footer {
             color: #ADB3BA;
         }
     }
+    
 }

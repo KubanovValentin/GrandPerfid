@@ -9,6 +9,18 @@ body {
 .form * {
     outline: none;
 }
+// .block-1 {
+//     padding: 40px;
+//     border: 1px solid green;
+//     }
+
+// .block-2 {
+//     padding: 40px;
+//     border: 1px solid red;
+//     display: none;
+//     }
+
+
 
 @import './blocks/upper';
 @import './blocks/hamburger';
@@ -24,6 +36,7 @@ body {
 @import './blocks/footer';
 @import './blocks/contactPage';
 @import './blocks/servicesPage';
+@import './blocks/servicesPageMoon';
 @import './blocks/articlesPage';
 @import './blocks/articlesSliderPage';
 @import './blocks/helpPage';

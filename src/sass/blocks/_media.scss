@@ -409,6 +409,9 @@
     .title {
         font-size: 70px;
     }
+    .titleMoon {
+        font-size: 70px;
+    }
     .upper {
         .container {
             width: 700px;  
@@ -538,6 +541,16 @@
             }
         }
     } 
+    .servicesPage {
+        &__items-accountant, &__items-lawyer {
+            margin-bottom: 70px;
+        }
+    }
+    .servicesPageMoon {
+        &__items-accountant, &__items-lawyer {
+            margin-bottom: 70px;
+        }
+    }
     .accountingServicePage{
         table {
             .cost {
@@ -609,6 +622,9 @@
         &_expl {
             margin-left: 70px ;
         }
+    }
+    .titleMoon {
+        font-size: 50px;
     }
     .upper {
         &__wrapper {
@@ -802,9 +818,20 @@
         }
     }
     .servicesPage {
+        padding: 0 20px 70px 20px;
         &__items-lawyer, &__items-accountant {
             grid-template-columns: 1fr;
-            margin-bottom: 100px;;
+        }
+        &__items-other {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            gap: 20px;
+        }
+    }
+    .servicesPageMoon {
+        padding: 0 20px 70px 20px;
+        &__items-lawyer, &__items-accountant {
+            grid-template-columns: 1fr;
         }
         // &__items-accountant {
         //     grid-template-columns: 1fr;
@@ -814,7 +841,6 @@
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
             gap: 20px;
-            margin-bottom: 100px;
         }
     }
     .articlesPage {
@@ -950,6 +976,10 @@
         font-size: 40px;
         text-align: center;
     }
+    .titleMoon {
+        font-size: 40px;
+        text-align: center;
+    }
     .header {
         padding: 0;
         justify-content: center;
@@ -1055,6 +1085,20 @@
         
     }
     .servicesPage {
+        &__title {
+            
+            padding-left: 20px;
+            a {
+                font-size: 25px;
+            }
+        }
+        &__subtitle {
+            a {
+                font-size: 21px;
+            }
+        }
+    }
+    .servicesPageMoon {
         &__title {
             
             padding-left: 20px;
@@ -1405,6 +1449,5 @@
             margin-top: 20px;
         }
     }
-
 }
 
