@@ -401,6 +401,39 @@
             }
         }
     }
+    .contact {
+        padding: 0px 10% 100px 5%;
+        #form-contact {
+            .form {
+                input, textarea {
+                    width: 100%;
+                }
+                textarea {
+                    padding: 20px 30px;
+                }
+                input, textarea {
+                    margin-bottom: 7px;
+                    width: 80%;
+                    font-size: 15px;
+                    &:focus {
+                        &::placeholder {
+                            transform: translateY(-18px);
+                            font-weight: 700;
+                            font-size: 18px;
+                        }
+                    }
+                }
+                &__item {
+                    width: 100%;
+                }
+                &_contact {
+                    label {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 

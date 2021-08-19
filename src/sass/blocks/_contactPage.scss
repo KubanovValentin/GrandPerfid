@@ -1,7 +1,8 @@
 .contact {
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #E2FAFE 100%) 0% 0% no-repeat padding-box;
     &__wrapper {
         width: 100%;
-        background: transparent linear-gradient(180deg, #FFFFFF 0%, #E2FAFE 100%) 0% 0% no-repeat padding-box;
+        
     }
     
     .container {
@@ -79,5 +80,22 @@
         align-items: center;
         justify-content: center;
         
+    }
+    #form-contact {
+        .form {
+            input, textarea {
+                width: 100%;
+            }
+            &__item {
+                width: 100%;
+            }
+            &_contact {
+                label {
+                    width: 100%;
+                }
+            }
+        }
+        
+
     }
 }
